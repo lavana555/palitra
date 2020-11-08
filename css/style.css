@@ -1,0 +1,72 @@
+width: 80%;
+margin: 30px auto;
+overflow: hidden;
+}
+ 
+.container ul li {
+list-style:none;
+float: left;
+font: 10px/1.5 Verdana, Helvetica, Sans-serif;
+width: 16%;
+margin: 2% 2% 40px 2%;
+}
+ 
+.containe_inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container ul li a {
+color: #5d5f5d;
+}
+ 
+.container ul li a img {
+max-width: 100%;
+}
+ 
+/* 100% - (5 * 4%) = 80% */
+/* 80%/5 = 16% */
+ 
+/* 100% - (4 * 4%) = 84% */
+/* 80%/4 = 21% */
+ 
+/* Media Queries */
+@media only screen and (max-width : 940px),
+only screen and (max-device-width : 940px){
+ 
+.container ul li {
+width: 21%;
+}
+}
+ 
+/* 100% - (3 * 4%) = 88% */
+/* 88%/3 = 29.33333% */
+ 
+@media only screen and (max-width : 720px),
+only screen and (max-device-width : 720px){
+ 
+.container ul li {
+width: 29.33333%
+}
+}
+ 
+/* 100% - (2 * 4%) = 92% */
+/* 92%/2 = 46% */
+ 
+@media only screen and (max-width : 530px),
+only screen and (max-device-width : 530px){
+.container ul li {
+width: 46%
+}
+}
+ 
+/* 100% - 4% = 96% */
+/* 96% */
+ 
+@media only screen and (max-width : 320px),
+only screen and (max-device-width : 320px){
+.container ul li {
+width: 96%
+}
+}
